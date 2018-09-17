@@ -1,18 +1,30 @@
 This is analysis.txt
-Replace this line with your name
-Replace this line with your netid
+Rachel Lin Hua
+rlh49
 
 Copy/paste the output of your simulation when using planets.txt,
 running the simulation for 1,000,000 (one  million) seconds, and
 with a time-step/dt value of 25,000
 
-(replace with copy/paste)
+5
+2.50e+11
+ 1.4490e+11  2.9304e+10 -9.0928e+03  2.8352e+04  5.9740e+24    earth.gif
+ 1.8418e+11  1.9484e+10 -8.4625e+04  1.0625e+04  6.4190e+23     mars.gif
+-2.7082e+10  3.8926e+10 -1.6451e+05  2.1704e+04  3.3020e+23  mercury.gif
+-1.4108e+04 -1.4898e+03 -2.7310e-02 -4.3488e-03  1.9890e+30      sun.gif
+ 1.0244e+11  3.4391e+10 -1.1156e+04  3.3224e+04  4.8690e+24    venus.gif
 
 Copy/paste the output of your simulation when using planets.txt,
 running the simulation for 2,000,000 (one  million) seconds, and
 with a time-step/dt value of 25,000
 
-(replace with copy/paste)
+5
+2.50e+11
+ 1.3150e+11  5.5684e+10 -1.7272e+04  2.4071e+04  5.9740e+24    earth.gif
+ 5.9487e+10  1.1759e+10 -1.6074e+05 -2.9220e+04  6.4190e+23     mars.gif
+-2.6949e+11  2.4959e+10 -3.1248e+05 -5.5753e+04  3.3020e+23  mercury.gif
+-5.4351e+04 -1.1760e+04 -5.1876e-02 -1.7208e-02  1.9890e+30      sun.gif
+ 8.5997e+10  6.5196e+10 -2.1191e+04  2.7971e+04  4.8690e+24    venus.gif
 
 Run the simulation for a billion seconds (10^9) and a time-step/dt
 of a million. You should see behavior inconsistent with what is
@@ -20,5 +32,7 @@ expected for celestial bodies. This is due to large values of dt
 when approximating forces. Write down below what you see during
 this simulation.
 
-(replace with observed behavior)
+There are only two celestial bodies. They are going at extremely fast speeds.
+One celestial body's (it looks like Earth's) course seems to go off path and 
+the celestial body spirals off the screen after a few revolutions. 
 
