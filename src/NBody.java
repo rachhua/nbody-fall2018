@@ -26,6 +26,7 @@ public class NBody {
 		
 		s.close();
 		
+		//hellow
 		// TODO: return radius read
 		return 0;	
 	}
