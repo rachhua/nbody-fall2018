@@ -66,8 +66,8 @@ public class NBody {
 	}
 	
 	public static void main(String[] args) throws FileNotFoundException{
-		double totalTime = 1000000000.0;
-		double dt = 1000000.0;
+		double totalTime = 5000000.0;
+		double dt = 25000.0;
 		
 		String fname= "./data/planets.txt";
 		if (args.length > 2) {
@@ -90,13 +90,12 @@ public class NBody {
 			double[] yforces = new double[bodies.length];
 			// TODO: loop over all bodies, calculate
 			// net forces and store in xforces and yforces
-			for (Body b: bodies) {
-				for(int i = 0; i<bodies.length; i++){
-					xforces[i] = b.calcNetForceExertedByX(bodies);
-					yforces[i] = b.calcNetForceExertedByY(bodies);
-				}
-				
+
+			for(int i = 0; i<bodies.length; i++){
+				xforces[i] = bodies[i].calcNetForceExertedByX(bodies);
+				yforces[i] = bodies[i].calcNetForceExertedByY(bodies);
 			}
+				
 			
 			// TODO: loop over all bodies and call update
 			// with dt and corresponding xforces, yforces values

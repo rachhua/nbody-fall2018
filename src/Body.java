@@ -123,7 +123,7 @@ public class Body {
 	 */
 	public double calcDistance(Body b) {
 		double dist;
-		dist = Math.sqrt(Math.pow(this.getX()-b.getX(),2)+Math.pow(this.getY()-b.getY(), 2)); //check this
+		dist = Math.sqrt(Math.pow(b.getX()-this.getX(),2)+Math.pow(b.getY()-this.getY(), 2)); //check this
 		return dist;
 	}
 	
@@ -145,7 +145,7 @@ public class Body {
 	 */
 	public double calcForceExertedByX(Body p) {
 		double forceX;
-		forceX = -(this.calcForceExertedBy(p) * (this.getX()-p.getX())) / this.calcDistance(p);
+		forceX = (this.calcForceExertedBy(p) * (p.getX()-this.getX())) / this.calcDistance(p);
 		return forceX;
 	}
 	/**
@@ -155,7 +155,7 @@ public class Body {
 	 */
 	public double calcForceExertedByY(Body p) {
 		double forceY;
-		forceY = -(this.calcForceExertedBy(p) * (this.getY()-p.getY())) / this.calcDistance(p);
+		forceY = (this.calcForceExertedBy(p) * (p.getY()-this.getY())) / this.calcDistance(p);
 		return forceY;
 	}
 	
